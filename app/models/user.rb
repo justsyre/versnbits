@@ -12,4 +12,11 @@ class User < ApplicationRecord
       ["lower(username) = :value OR lower(email) = :value", { value: login.strip.downcase}]
     ).first
   end
+
+  enum role: [:user, :admin]
+  after_initialize :set_default_role, :if => :new_record?
+  def set_default_role
+    self.role ||= :user
+  end
+
 end
