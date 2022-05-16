@@ -6,6 +6,7 @@ class CreateProfiles < ActiveRecord::Migration[7.0]
       t.string :middle_name, null: true
       t.string :last_name, null: false
       t.date :birth_date, null: false
+      t.string :phone_number, null: false
       t.string :personal_email, null: false
 
       t.timestamps

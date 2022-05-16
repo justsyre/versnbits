@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_16_060448) do
     t.string "middle_name"
     t.string "last_name", null: false
     t.date "birth_date", null: false
+    t.string "phone_number", null: false
     t.string "personal_email", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -1,0 +1,36 @@
+<%= form_with model: @profile do |f| %>
+  
+  <div class="field">
+    <%= f.label :user_id %>:
+    <%= f.text_field :user_id, autofocus: true, autocomplete: "user_id" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :first_name %>:
+    <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name" %>
+  </div>
+  <div class="field">
+    <%= f.label :middle_name %>:
+    <%= f.text_field :middle_name, autofocus: true, autocomplete: "middle_name" %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %>:
+    <%= f.text_field :last_name, autofocus: true, autocomplete: "last_name" %>
+  </div>
+  <div class="field">
+    <%= f.label :birth_date %>:
+    <%= f.date_field :birth_date, autofocus: true, autocomplete: "birth_date" %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %>:
+    <%= f.text_field :phone_number, autofocus: true, autocomplete: "phone_number" %>
+  </div>
+  <div class="field">
+    <%= f.label :personal_email %>:
+    <%= f.email_field :personal_email, autofocus: true, autocomplete: "personal_email" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Save" %>
+  </div>
+
+<% end %>

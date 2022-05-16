@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  root 'pages#home'
   devise_for :users
+  resources :profile
+
+  root 'pages#home'
+  
 
   # Temporary Root Routes
   # devise_scope :user do
